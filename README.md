@@ -1,2 +1,2 @@
 # Gatsby-Dockerfile
-Template of Gatsby in Dockerfile for my purposes.
+docker-compose up --build
