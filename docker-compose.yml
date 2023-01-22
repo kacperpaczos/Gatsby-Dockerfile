@@ -6,7 +6,8 @@ services:
       context: ./dockerfiles
       dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "8000:8000" #for develop
+      - "9000:9000" #for serve
     volumes:
       - ./gatsby-website:/app:rw
     environment:

@@ -9,4 +9,5 @@ WORKDIR /app
 #RUN cat /app/docker-entrypoint.sh
 #RUN ls -l /app
 EXPOSE 8000
+EXPOSE 9000
 ENTRYPOINT ["/bin/sh", "/app/docker-entrypoint.sh"]

@@ -4,4 +4,11 @@ cd /app/${WEBSITE}
 npm install -g gatsby-cli
 npm cache clean --force
 npm install --arch=x64 --platform=linux --legacy-peer-deps
-gatsby ${NODE_ENV}
+if [ ${NODE_ENV} = "serve" ]
+then
+    gatsby build
+    gatsby serve
+else
+    gatsby develop
+fi
+
