@@ -9,4 +9,7 @@ services:
       - "8000:8000"
     volumes:
       - ./gatsby-website:/app:rw
+    environment:
+     - NODE_ENV=serve #or develop
+     - WEBSITE=website1 #name of the direcotry inside gatsby-website, you can use gatby new command.
 
